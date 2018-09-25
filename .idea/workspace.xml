@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dictionary/Controller_frame_search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_frame_add.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_frame_add.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_frame_search.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_frame_search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/frameAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/frameAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/frameSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/frameSearch.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary/Controller_frame_add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/Controller_frame_add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary/Controller_frame_search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/Controller_frame_search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary/frame/frameAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/frame/frameAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,42 +68,45 @@
     <session id="1128579143">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.52" value="2" />
+          <entry key="project.open.time.53" value="2" />
+          <entry key="project.open.time.55" value="3" />
+          <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="fxml" value="14" />
+          <entry key="class" value="2" />
+          <entry key="fxml" value="18" />
           <entry key="iml" value="1" />
-          <entry key="java" value="13" />
+          <entry key="java" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="13" />
-          <entry key="XML" value="14" />
+          <entry key="JAVA" value="20" />
+          <entry key="XML" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="fxml" value="107" />
-          <entry key="java" value="1293" />
+          <entry key="fxml" value="140" />
+          <entry key="java" value="3146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1293" />
+          <entry key="JAVA" value="3146" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="XML" value="107" />
+          <entry key="XML" value="140" />
         </counts>
       </usages-collector>
     </session>
@@ -106,24 +119,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="171">
+              <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dictionary/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,10 +130,19 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameAdd.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="100" lean-forward="true" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+            <state relative-caret-position="195">
+              <caret line="13" column="100" selection-start-line="13" selection-start-column="100" selection-end-line="13" selection-end-column="100" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dictionary/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -142,23 +150,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_add.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -182,7 +187,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -196,11 +201,13 @@
         <option value="$PROJECT_DIR$/src/dictionary/Controller.java" />
         <option value="$PROJECT_DIR$/src/dictionary/frame/frame_home.fxml" />
         <option value="$PROJECT_DIR$/src/dictionary/frame/FrameAdd.fxml" />
-        <option value="$PROJECT_DIR$/src/dictionary/Connection.java" />
         <option value="$PROJECT_DIR$/src/dictionary/Main.java" />
-        <option value="$PROJECT_DIR$/src/dictionary/Controller_frame_search.java" />
-        <option value="$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml" />
         <option value="$PROJECT_DIR$/src/dictionary/frame/frameAdd.fxml" />
+        <option value="$PROJECT_DIR$/src/dictionary/Controller_frame_update.java" />
+        <option value="$PROJECT_DIR$/src/dictionary/frame/frameUpdate.fxml" />
+        <option value="$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml" />
+        <option value="$PROJECT_DIR$/src/dictionary/Connection.java" />
+        <option value="$PROJECT_DIR$/src/dictionary/Controller_frame_search.java" />
         <option value="$PROJECT_DIR$/src/dictionary/Controller_frame_add.java" />
       </list>
     </option>
@@ -229,9 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,6 +265,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,12 +281,16 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/tuan/Desktop/Workspace/OOP/dict_oop/src/dictionary/Controller.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537778126472" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537870458061" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dictionary" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/dictionary/frame" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/dictionary" />
     </key>
@@ -381,16 +392,23 @@
       <workItem from="1537768727590" duration="642000" />
       <workItem from="1537769700273" duration="8878000" />
       <workItem from="1537778851001" duration="3904000" />
+      <workItem from="1537788496207" duration="6212000" />
+      <workItem from="1537797749762" duration="1713000" />
+      <workItem from="1537799997809" duration="1328000" />
+      <workItem from="1537805088625" duration="261000" />
+      <workItem from="1537858712211" duration="6452000" />
+      <workItem from="1537865989756" duration="963000" />
+      <workItem from="1537867617493" duration="2654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16106000" />
+    <option name="totallyTimeSpent" value="35689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19760956" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25816733" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -410,7 +428,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32919255" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -456,31 +474,6 @@
     <entry file="file://$PROJECT_DIR$/src/dictionary/frame/h.fxml" />
     <entry file="file://$PROJECT_DIR$/src/dictionary/frame/home.fxml" />
     <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frame_home.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/dictionary/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/com/sun/javafx/tk/quantum/GlassViewEventHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1150">
@@ -490,31 +483,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionary/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameUpdate.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameSearch.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_update.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionary/frame/frameAdd.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="100" lean-forward="true" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+        <state relative-caret-position="195">
+          <caret line="13" column="100" selection-start-line="13" selection-start-column="100" selection-end-line="13" selection-end-column="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_frame_add.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>

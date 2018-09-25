@@ -5,7 +5,7 @@ import  java.util.*;
 public class Connection {
     public java.sql.Connection connection ;
     public java.sql.Connection getConnection(){
-        String db_name = "javafx";
+        String db_name = "edict";
         String user= "root";
         String pass = "root";
         try{
