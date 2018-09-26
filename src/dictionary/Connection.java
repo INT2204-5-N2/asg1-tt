@@ -7,7 +7,7 @@ public class Connection {
     public java.sql.Connection getConnection(){
         String db_name = "edict";
         String user= "root";
-        String pass = "root";
+        String pass = "12345678";
         try{
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost/"+db_name+"?autoReconnect=true&useSSL=false",user,pass);

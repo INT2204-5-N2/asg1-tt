@@ -1,5 +1,6 @@
 package dictionary;
 
+import javafx.application.Platform;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -23,17 +24,27 @@ public class Controller_frame_add {
         String new_word = txt_NewWord.getText();
         String new_word_detail = txt_NewWordDetail.getText();
 
-        String sql = "Insert into tbl_edict values('new_id','"+new_word+"','"+new_word_detail+"');";
+        String sql = "Insert into tbl_edict values(0,'"+new_word+"','"+new_word_detail+"');";
 //        String sql = "INSERT Into vd3 values ('b','hai');";
 //        String sql = "Insert into tbl_edict values('"  + new_word+"','"+new_word_detail+"');";
         System.out.println(sql);
         Statement statement = conection.createStatement();
         try {
             statement.executeUpdate(sql);
-            System.out.println("da them");
+//            System.out.println("");
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setContentText("Đã thêm !");
+            alert.showAndWait();
+            ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
         }
         catch (Exception e) {
-            System.out.println("da ton tai");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("Đã tồn tại !");
+            alert.showAndWait();
+            txt_NewWord.setText("");
+            txt_NewWordDetail.setText("");
         }
 
     }

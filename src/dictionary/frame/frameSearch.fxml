@@ -11,7 +11,7 @@
       <TextField fx:id="txt_Search" layoutX="6.0" layoutY="59.0" prefHeight="26.0" prefWidth="179.0" />
       <Button fx:id="btnChange" layoutX="293.0" layoutY="14.0" mnemonicParsing="false" onAction="#change_detail" text="Sửa" />
       <Button fx:id="btnDelete" layoutX="362.0" layoutY="14.0" mnemonicParsing="false" onAction="#delete_word" text="Xóa" />
-      <Button fx:id="btn_AddWord" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#open_frame_add" text="Them" />
+      <Button fx:id="btn_AddWord" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#open_frame_add" text="Thêm" />
       <WebView fx:id="ww_Detail" layoutX="226.0" layoutY="52.0" prefHeight="249.0" prefWidth="238.0" />
    </children>
 </Pane>

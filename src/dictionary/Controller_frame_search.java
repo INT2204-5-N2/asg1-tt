@@ -43,7 +43,8 @@ public class Controller_frame_search {
 
         String sql = "SELECT detail from tbl_edict where word ='"+key+"';";
         System.out.println(sql);
-
+        WebEngine webEngine = ww_Detail.getEngine();
+        webEngine.loadContent("");
         try {
             Statement statement = conection.createStatement();
 
@@ -52,12 +53,12 @@ public class Controller_frame_search {
             while ( rs.next()) {
                 String html = rs.getString("detail");
                 html = "<html><body>" + html +"</body></html>";
-                WebEngine webEngine = ww_Detail.getEngine();
+
                 webEngine.loadContent(html);
 //                System.out.println(rs.getString("detail"));
                 d =1;
             }
-            if (d == 0) System.out.println("khong ton tai");
+            if (d == 0) webEngine.loadContent("Chưa có dữ liệu");
 
         }
         catch (Exception e){
@@ -77,7 +78,7 @@ public class Controller_frame_search {
 //        stage.initModality(Modality.APPLICATION_MODAL);
 //        stage.initStyle(StageStyle.UNDECORATED);
 
-        stage.setTitle("thay doi nghia cua tu " + word);
+        stage.setTitle("Thay đổi nghĩa của từ " + word);
         stage.setScene(new Scene(root1));
 //        System.out.println(key);
 //        txt_Word.setText(word);
@@ -104,10 +105,18 @@ public class Controller_frame_search {
             Statement statement = conection.createStatement();
             try {
                 statement.executeUpdate(sql);
-                System.out.println("da sua");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setContentText("Đã sửa thành công!");
+                alert.showAndWait();
+                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+
             }
             catch (Exception e) {
                 e.printStackTrace();
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setContentText(e.toString());
             }
 
         }
@@ -124,7 +133,13 @@ public class Controller_frame_search {
         Statement statement = conection.createStatement();
         try {
             statement.executeUpdate(sql);
-            System.out.println("da xoa");
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setContentText("Đã xóa !");
+            alert.showAndWait();
+            txt_Search.setText("");
+            WebEngine webEngine = ww_Detail.getEngine();
+            webEngine.loadContent("");
         }
         catch (Exception e){
             e.printStackTrace();
