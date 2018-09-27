@@ -14,9 +14,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.web.WebView?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="895.0" style="-fx-background-color: #99ccff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_frame_search">
+
+<AnchorPane prefHeight="580.0" prefWidth="667.0" style="-fx-background-color: #99ccff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_frame_search">
    <children>
-      <Pane prefHeight="103.0" prefWidth="895.0" style="-fx-background-color: #3399FF;">
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="103.0" prefWidth="667.0" style="-fx-background-color: #3399FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text layoutX="110.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50px; -fx-font-family: Arial Black; -fx-fill: #818181; -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );" text="TT-DICTIONARY" />
             <ImageView fitHeight="94.0" fitWidth="90.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
@@ -26,56 +27,48 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="233.0" layoutY="111.0" prefHeight="457.0" prefWidth="648.0" style="-fx-background-color: cccccc;">
+      <GridPane layoutX="8.0" layoutY="110.0" prefHeight="457.0" prefWidth="207.0" style="-fx-background-color: #999999;" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="110.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="214.0" minHeight="0.0" prefHeight="109.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="208.0" minHeight="2.0" prefHeight="111.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+         </rowConstraints>
          <children>
-            <WebView fx:id="ww_Detail" layoutX="242.0" layoutY="53.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="395.0" />
-            <ScrollPane layoutX="14.0" layoutY="55.0" prefHeight="385.0" prefWidth="200.0" />
-            <Button fx:id="btn_Search" layoutX="158.0" layoutY="10.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" />
-            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="9.0" prefHeight="26.0" prefWidth="132.0" />
-         </children>
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-      </Pane>
-      <Pane layoutX="14.0" layoutY="110.0" prefHeight="457.0" prefWidth="200.0" style="-fx-background-color: #999999;">
-         <children>
-            <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRA CỨU OFFLINE" />
-            <Text layoutX="6.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHỨC NĂNG ONLINE" />
-            <Button layoutX="11.0" layoutY="29.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="Từ điển Anh-Việt">
+            <Button layoutX="11.0" layoutY="17.0" lineSpacing="1.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="TRA CỨU OFFLINE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button layoutX="11.0" layoutY="129.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="TRA CỨU ONLINE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="93.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="Từ điển Việt-ANH">
+            <Button layoutX="11.0" layoutY="240.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="THÊM TỪ" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="180.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="ĐỒNG NGHĨA-TRÁI NGHĨA">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="243.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="NGÔN NGỮ KHÁC">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Button>
-            <Text layoutX="11.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CÔNG CỤ KHÁC" />
-            <Button layoutX="10.0" layoutY="333.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="THÊM SỬA TỪ">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="396.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="179.0" text="HÒM THƯ GÓP Ý">
+            <Button layoutX="11.0" layoutY="349.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="CREDIT" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
          </children>
-      </Pane>
+      </GridPane>
+      <AnchorPane layoutX="231.0" layoutY="112.0" prefHeight="457.0" prefWidth="424.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="112.0">
+         <children>
+            <TextField fx:id="txt_Search" layoutX="62.0" layoutY="10.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="10.0" />
+            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="395.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="58.0" />
+            <Button fx:id="btn_Search" layoutX="306.0" layoutY="10.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
    </children>
-   <opaqueInsets>
-      <Insets />
-   </opaqueInsets>
-</Pane>
+</AnchorPane>
