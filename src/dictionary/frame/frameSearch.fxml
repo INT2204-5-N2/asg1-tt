@@ -21,7 +21,7 @@
             <Text layoutX="110.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50px; -fx-font-family: Arial Black; -fx-fill: #818181; -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );" text="TT-DICTIONARY" />
             <ImageView fitHeight="94.0" fitWidth="90.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../view/logo.png" />
+                  <Image url="//view/logo.png" />
                </image>
             </ImageView>
          </children>
