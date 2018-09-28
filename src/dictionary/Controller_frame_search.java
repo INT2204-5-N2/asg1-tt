@@ -4,11 +4,13 @@ import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.*;
 
 import javax.swing.text.html.ImageView;
+import java.io.IOException;
 import java.sql.*;
 
 public class Controller_frame_search {
@@ -25,22 +27,7 @@ public class Controller_frame_search {
 
     public TextField txt_WordDetail;
     public Button btn_Save;
-    public ImageView iw_a;
-    public void say(){
-        System.out.println("a");
-    }
-    public void open_frame_add(ActionEvent actionEvent) throws  Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//frameAdd.fxml"));
-        Parent root1 = (Parent)fxmlLoader.load();
 
-        Stage stage = new Stage();
-//        stage.initModality(Modality.APPLICATION_MODAL);
-//        stage.initStyle(StageStyle.UNDECORATED);
-
-        stage.setTitle("Thêm từ mới");
-        stage.setScene(new Scene(root1));
-        stage.show();
-    }
     public  void  search(ActionEvent actionEvent) throws SQLException{
         Connection connection_class = new Connection();
         java.sql.Connection conection = connection_class.getConnection();
@@ -76,7 +63,7 @@ public class Controller_frame_search {
 //        System.out.println(word);
 //        String key = word;
         word = txt_Search.getText();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//frameUpdate.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//online_mode.fxml"));
         Parent root1 = (Parent)fxmlLoader.load();
 
         Stage stage = new Stage();
