@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("frame//frameSearch.fxml"));
         primaryStage.setTitle("Dictionary by TT");
-        primaryStage.setScene(new Scene(root, 480, 275));
+        primaryStage.setScene(new Scene(root, 780, 560));
         try {
             Connection connection_class = new Connection();
             java.sql.Connection conection = connection_class.getConnection();
