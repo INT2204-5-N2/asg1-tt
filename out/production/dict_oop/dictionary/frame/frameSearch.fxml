@@ -19,7 +19,7 @@
       <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="103.0" prefWidth="667.0" style="-fx-background-color: #3399FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Text layoutX="110.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50px; -fx-font-family: Arial Black; -fx-fill: #818181; -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );" text="TT-DICTIONARY" />
-            <ImageView fitHeight="94.0" fitWidth="90.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="iw_a" fitHeight="94.0" fitWidth="90.0" layoutX="9.0" layoutY="8.0" onMouseClicked="#say" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@logo.png" />
                </image>
@@ -62,11 +62,14 @@
             </Button>
          </children>
       </GridPane>
-      <AnchorPane layoutX="231.0" layoutY="112.0" prefHeight="457.0" prefWidth="424.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="112.0">
+      <AnchorPane layoutX="231.0" layoutY="112.0" minHeight="300.0" minWidth="300.0" prefHeight="457.0" prefWidth="424.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="112.0">
          <children>
-            <TextField fx:id="txt_Search" layoutX="62.0" layoutY="10.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="10.0" />
-            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="395.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="58.0" />
-            <Button fx:id="btn_Search" layoutX="306.0" layoutY="10.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="10.0" />
+            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
+            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="58.0" />
+            <Button fx:id="btn_Search" layoutX="268.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
+            <Button layoutX="343.0" layoutY="58.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" text="XÓA" />
+            <Button layoutX="343.0" layoutY="117.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="64.0" text="SỬA" />
+            <Button layoutX="342.0" layoutY="387.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="64.0" style="-fx-background-image: url('@logo.png');" />
          </children>
       </AnchorPane>
    </children>

@@ -7,6 +7,8 @@ import javafx.scene.control.*;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.*;
+
+import javax.swing.text.html.ImageView;
 import java.sql.*;
 
 public class Controller_frame_search {
@@ -23,7 +25,10 @@ public class Controller_frame_search {
 
     public TextField txt_WordDetail;
     public Button btn_Save;
-
+    public ImageView iw_a;
+    public void say(){
+        System.out.println("a");
+    }
     public void open_frame_add(ActionEvent actionEvent) throws  Exception{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//frameAdd.fxml"));
         Parent root1 = (Parent)fxmlLoader.load();
