@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="471.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="421.0" prefWidth="412.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="103.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TT-DICTIONARY" wrappingWidth="299.13671875">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="192.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Người sáng lập">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="210.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chức năng">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="137.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trách nhiệm nội dung: Hoàng Anh Tuấn">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="141.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trách nhiệm hình ảnh: Bùi Thanh Tùng">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="205.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm offline">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="206.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm online">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="211.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghe phát âm">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="203.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="chỉnh sửa từ điển">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="176.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cố vấn: Trần Mạnh Cường">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="-500.0" right="500.0" />
+         </padding>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -9,8 +9,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.io.IOException;
+import javafx.event.*;
+import java.io.*;
 import java.sql.SQLException;
 
 public class Main extends Application {
@@ -52,6 +52,7 @@ public class Main extends Application {
         loader.setLocation(Main.class.getResource("frame/offline_mode.fxml"));
         BorderPane offlineMode = loader.load();
         mainLayout.setCenter(offlineMode);
+
     }
 
 
