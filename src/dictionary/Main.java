@@ -69,6 +69,12 @@ public class Main extends Application {
         BorderPane frameAdd = loader.load();
         mainLayout.setCenter(frameAdd);
     }
+    public static void showFrameEdit() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("frame/frameEdit.fxml"));
+        BorderPane frameEdit = loader.load();
+        mainLayout.setCenter(frameEdit);
+    }
 
     public static void main(String[] args) {
         launch(args);

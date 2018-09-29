@@ -13,8 +13,9 @@ import javax.swing.text.html.ImageView;
 import java.io.IOException;
 import java.sql.*;
 
-public class Controller_frame_search {
+public class Controller_offline_mode {
 
+    private Main main;
     public TextField txt_Search;
     public Button btn_Search;
     public Button btn_AddWord;
@@ -59,27 +60,9 @@ public class Controller_frame_search {
         }
 
     }
-    public void change_detail(ActionEvent actionEvent) throws Exception{
-//        System.out.println(word);
-//        String key = word;
-        word = txt_Search.getText();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//frameAdd.fxml"));
-        Parent root1 = (Parent)fxmlLoader.load();
-
-        Stage stage = new Stage();
-//        stage.initModality(Modality.APPLICATION_MODAL);
-//        stage.initStyle(StageStyle.UNDECORATED);
-
-        stage.setTitle("Thay đổi nghĩa của từ " + word);
-        stage.setScene(new Scene(root1));
-//        System.out.println(key);
-//        txt_Word.setText(word);
-//        lbl_word.setText(word);
-//        System.out.println(word);
-//        lbl_word.setText("d");
-        stage.show();
-
-
+    @FXML
+    private void goFrameEdit() throws IOException{
+        main.showFrameEdit();
     }
 
 

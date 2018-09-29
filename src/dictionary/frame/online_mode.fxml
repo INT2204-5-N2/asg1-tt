@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_frame_search">
+<BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_offline_mode">
    <center>
       <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
          <children>
