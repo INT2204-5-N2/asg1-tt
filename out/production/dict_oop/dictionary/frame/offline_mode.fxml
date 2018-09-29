@@ -11,13 +11,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-
-<BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="dictionary.Controller_frame_search">
+<BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_frame_search">
    <center>
       <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" text="offfline" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
+            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
             <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="58.0" />
             <Button fx:id="btn_Search" layoutX="268.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
             <GridPane layoutX="342.0" layoutY="58.0" prefHeight="385.0" prefWidth="64.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="58.0">
@@ -52,6 +50,11 @@ fx:controller="dictionary.Controller_frame_search">
                   <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
+            <Text layoutX="385.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offline" wrappingWidth="49.716796875" AnchorPane.rightAnchor="25.283203125" AnchorPane.topAnchor="17.892578125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </center>

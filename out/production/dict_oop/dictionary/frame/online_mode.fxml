@@ -11,43 +11,51 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="dictionary.Controller_frame_search">
-   <children>
-      <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" text="online" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
-      <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="58.0" />
-      <Button fx:id="btn_Search" layoutX="268.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
-      <GridPane layoutX="342.0" layoutY="58.0" prefHeight="385.0" prefWidth="64.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="58.0">
+<BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_frame_search">
+   <center>
+      <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="343.0" layoutY="58.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="64.0" text="XÓA">
+            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
+            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="58.0" />
+            <Button fx:id="btn_Search" layoutX="268.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
+            <GridPane layoutX="342.0" layoutY="58.0" prefHeight="385.0" prefWidth="64.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="58.0">
+               <children>
+                  <Button layoutX="343.0" layoutY="58.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="64.0" text="XÓA">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="speaker" layoutX="342.0" layoutY="387.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="64.0" style="-fx-background-image: url('@logo.png');" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@speaker.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="343.0" layoutY="117.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="SỬA" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="121.0" minHeight="5.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="185.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Text layoutX="388.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" wrappingWidth="43.716796875" AnchorPane.rightAnchor="28.283203125" AnchorPane.topAnchor="17.892578125">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
-            </Button>
-            <Button fx:id="speaker" layoutX="342.0" layoutY="387.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="64.0" style="-fx-background-image: url('@logo.png');" GridPane.rowIndex="3">
-               <graphic>
-                  <ImageView fitHeight="60.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@speaker.jpg" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="343.0" layoutY="117.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" text="SỬA" GridPane.rowIndex="1">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
+            </Text>
          </children>
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints maxHeight="121.0" minHeight="5.0" prefHeight="74.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="185.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="308.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-      </GridPane>
-   </children>
-</AnchorPane>
+      </AnchorPane>
+   </center>
+</BorderPane>

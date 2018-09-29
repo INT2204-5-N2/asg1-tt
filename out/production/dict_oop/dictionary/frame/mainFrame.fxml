@@ -36,44 +36,6 @@
       </Pane>
    </top>
    <left>
-      <GridPane prefHeight="457.0" prefWidth="207.0" style="-fx-background-color: #999999;">
-         <children>
-            <Button fx:id="offline_mode" layoutX="11.0" layoutY="17.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#showOfflineMode" prefHeight="90.0" prefWidth="179.0" text="TRA CỨU OFFLINE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
-            </Button>
-            <Button fx:id="online_mode" layoutX="11.0" layoutY="129.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="TRA CỨU ONLINE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="add_word" layoutX="11.0" layoutY="240.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="THÊM TỪ" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="credit" layoutX="11.0" layoutY="349.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="179.0" text="CREDIT" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Button>
-         </children>
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="214.0" minHeight="0.0" prefHeight="114.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="208.0" minHeight="2.0" prefHeight="118.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-         <BorderPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </BorderPane.margin>
-      </GridPane>
+      <AnchorPane />
    </left>
 </BorderPane>
