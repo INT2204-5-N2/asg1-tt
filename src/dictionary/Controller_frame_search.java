@@ -63,7 +63,7 @@ public class Controller_frame_search {
 //        System.out.println(word);
 //        String key = word;
         word = txt_Search.getText();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//online_mode.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame//frameAdd.fxml"));
         Parent root1 = (Parent)fxmlLoader.load();
 
         Stage stage = new Stage();

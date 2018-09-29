@@ -20,7 +20,7 @@ public class Main extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Dictionary by TT");
         showMainView();
-        showCredit();
+        showOfflineMode();
         showButton();
     }
     private void showMainView() throws IOException{
