@@ -8,15 +8,12 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-import javax.swing.*;
-import javafx.event.*;
-import java.io.*;
-import java.sql.SQLException;
+import javafx.event.ActionEvent;
+import java.io.IOException;
 
 public class Main extends Application {
     private Stage primaryStage;
-    private BorderPane mainLayout;
-    public Button offline_mode;
+    private static BorderPane mainLayout;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -24,8 +21,9 @@ public class Main extends Application {
         this.primaryStage.setTitle("Dictionary by TT");
         showMainView();
         showCredit();
+        showButton();
     }
-    public void showMainView() throws IOException{
+    private void showMainView() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("frame/mainFrame.fxml"));
         mainLayout = loader.load();
@@ -40,21 +38,37 @@ public class Main extends Application {
         }
         primaryStage.show();
     }
-    public void showCredit() throws IOException{
+    public static void showCredit() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("frame/credit.fxml"));
         BorderPane credit = loader.load();
         mainLayout.setCenter(credit);
     }
+    private void showButton() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("frame/button.fxml"));
+        BorderPane button = loader.load();
+        mainLayout.setLeft(button);
+    }
 
-    public void showOfflineMode(ActionEvent actionEvent) throws IOException{
+    public static void showOfflineMode() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("frame/offline_mode.fxml"));
         BorderPane offlineMode = loader.load();
         mainLayout.setCenter(offlineMode);
-
     }
-
+    public static void showOnlineMode() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("frame/online_mode.fxml"));
+        BorderPane onlineMode = loader.load();
+        mainLayout.setCenter(onlineMode);
+    }
+    public static void showFrameAdd() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("frame/frameAdd.fxml"));
+        BorderPane frameAdd = loader.load();
+        mainLayout.setCenter(frameAdd);
+    }
 
     public static void main(String[] args) {
         launch(args);
