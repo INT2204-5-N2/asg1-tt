@@ -8,8 +8,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.*;
-
-import javax.swing.text.html.ImageView;
+import java.io.*;
 import java.io.IOException;
 import java.sql.*;
 
@@ -99,6 +98,8 @@ public class Controller_offline_mode {
             e.printStackTrace();
         }
     }
+
+
     public void delete_word(ActionEvent actionEvent) throws  SQLException{
         Connection connection_class = new Connection();
         java.sql.Connection conection = connection_class.getConnection();
@@ -119,6 +120,36 @@ public class Controller_offline_mode {
         catch (Exception e){
             e.printStackTrace();
         }
+
+    }
+    public void read_word(ActionEvent actionEvent) throws IOException{
+        String fileName = "read.vbs";
+        String key = txt_Search.getText();
+
+        try {
+            // Assume default encoding.
+            FileWriter fileWriter =
+                    new FileWriter(fileName);
+
+            // Always wrap FileWriter in BufferedWriter.
+            BufferedWriter bufferedWriter =
+                    new BufferedWriter(fileWriter);
+
+            // Note that write() does not automatically
+            // append a newline character.
+            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
+
+            // Always close files.
+            bufferedWriter.close();
+        }
+        catch(IOException ex) {
+            System.out.println(
+                    "Error writing to file '"
+                            + fileName + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
+        }
+        Runtime.getRuntime().exec("wscript " + fileName);
 
     }
 }
