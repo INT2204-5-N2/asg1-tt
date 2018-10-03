@@ -1,5 +1,7 @@
 package dictionary;
 
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -11,6 +13,7 @@ import javafx.stage.*;
 import java.io.*;
 import java.io.IOException;
 import java.sql.*;
+import com.sun.speech.*;
 
 public class Controller_offline_mode {
 
@@ -28,6 +31,7 @@ public class Controller_offline_mode {
     public TextField txt_WordDetail;
     public Button btn_Save;
     public Label lbl_Detail;
+    public Button btn_Speaker;
 
     public  void  search(ActionEvent actionEvent) throws SQLException{
 
@@ -136,33 +140,44 @@ public class Controller_offline_mode {
 
     }
     public void read_word(ActionEvent actionEvent) throws IOException{
-        String fileName = "read.vbs";
-        String key = txt_Search.getText();
+//        String fileName = "read.vbs";
+//        String key = txt_Search.getText();
+//
+//        try {
+//            // Assume default encoding.
+//            FileWriter fileWriter =
+//                    new FileWriter(fileName);
+//
+//            // Always wrap FileWriter in BufferedWriter.
+//            BufferedWriter bufferedWriter =
+//                    new BufferedWriter(fileWriter);
+//
+//            // Note that write() does not automatically
+//            // append a newline character.
+//            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
+//
+//            // Always close files.
+//            bufferedWriter.close();
+//        }
+//        catch(IOException ex) {
+//            System.out.println(
+//                    "Error writing to file '"
+//                            + fileName + "'");
+//            // Or we could just do this:
+//            // ex.printStackTrace();
+//        }
+//        Runtime.getRuntime().exec("wscript " + fileName);
+        VoiceManager voiceManager = VoiceManager.getInstance();
+        Voice voice = voiceManager.getVoice("mike");
 
+        voice.allocate();
         try {
-            // Assume default encoding.
-            FileWriter fileWriter =
-                    new FileWriter(fileName);
-
-            // Always wrap FileWriter in BufferedWriter.
-            BufferedWriter bufferedWriter =
-                    new BufferedWriter(fileWriter);
-
-            // Note that write() does not automatically
-            // append a newline character.
-            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
-
-            // Always close files.
-            bufferedWriter.close();
+            voice.speak("hello");
         }
-        catch(IOException ex) {
-            System.out.println(
-                    "Error writing to file '"
-                            + fileName + "'");
-            // Or we could just do this:
-            // ex.printStackTrace();
+        catch (Exception e){
+            e.printStackTrace();
         }
-        Runtime.getRuntime().exec("wscript " + fileName);
 
     }
+    //homework.uet@gmail.com
 }
