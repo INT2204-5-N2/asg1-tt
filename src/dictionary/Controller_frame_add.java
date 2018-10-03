@@ -36,7 +36,9 @@ public class Controller_frame_add {
             alert.setHeaderText(null);
             alert.setContentText("Đã thêm !");
             alert.showAndWait();
-            ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+            txt_NewWord.setText("");
+            txt_NewWordDetail.setText("");
+            // ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
         }
         catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

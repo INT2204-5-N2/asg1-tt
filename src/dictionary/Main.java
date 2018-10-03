@@ -5,15 +5,20 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import javafx.event.ActionEvent;
+
+import java.awt.*;
 import java.io.IOException;
+
 
 public class Main extends Application {
     private Stage primaryStage;
     private static BorderPane mainLayout;
+    public Label lbl_Detail;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -75,6 +80,7 @@ public class Main extends Application {
         BorderPane frameEdit = loader.load();
         mainLayout.setCenter(frameEdit);
     }
+
 
     public static void main(String[] args) {
         launch(args);

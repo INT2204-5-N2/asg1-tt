@@ -3,7 +3,7 @@ package dictionary;
 import javafx.fxml.FXML;
 import java.io.IOException;
 
-public class Controller_frame_button extends Main{
+public class Controller_frame_button {
     private Main main;
     @FXML
     private void goOfflineMode() throws IOException{

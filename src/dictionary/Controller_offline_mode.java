@@ -27,8 +27,10 @@ public class Controller_offline_mode {
 
     public TextField txt_WordDetail;
     public Button btn_Save;
+    public Label lbl_Detail;
 
     public  void  search(ActionEvent actionEvent) throws SQLException{
+
         Connection connection_class = new Connection();
         java.sql.Connection conection = connection_class.getConnection();
         String key = txt_Search.getText();
@@ -43,6 +45,8 @@ public class Controller_offline_mode {
             ResultSet rs = statement.executeQuery(sql);
             int d =0;
             while ( rs.next()) {
+                btn_Delete.setDisable(false);
+                btn_Change.setDisable(false);
                 String html = rs.getString("detail");
                 html = "<html><body>" + html +"</body></html>";
 
@@ -50,7 +54,9 @@ public class Controller_offline_mode {
 //                System.out.println(rs.getString("detail"));
                 d =1;
             }
-            if (d == 0) webEngine.loadContent("Chưa có dữ liệu");
+            if (d == 0) {
+                webEngine.loadContent("Chưa có dữ liệu");
+            }
 
         }
         catch (Exception e){
@@ -61,11 +67,17 @@ public class Controller_offline_mode {
     }
     @FXML
     private void goFrameEdit() throws IOException{
+        word = txt_Search.getText();
+//        System.out.println(word);
+
         main.showFrameEdit();
+
     }
 
 
     public void update_word(ActionEvent actionEvent) throws SQLException{
+
+
         try {
 
             Connection connection_class = new Connection();
@@ -83,7 +95,8 @@ public class Controller_offline_mode {
                 alert.setHeaderText(null);
                 alert.setContentText("Đã sửa thành công!");
                 alert.showAndWait();
-                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+//                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+                txt_WordDetail.setText("");
 
             }
             catch (Exception e) {
