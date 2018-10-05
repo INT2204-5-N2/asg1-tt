@@ -4,9 +4,8 @@ package dictionary;
 import javafx.scene.*;
 import javafx.fxml.*;
 import javafx.scene.*;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -51,6 +50,47 @@ public class Controller_online_mode {
         }
 
     }
+    public void read_word(ActionEvent actionEvent) throws IOException{
+        String fileName = "read.vbs";
+        String key = txt_Search.getText();
+
+        try {
+            // Assume default encoding.
+            FileWriter fileWriter =
+                    new FileWriter(fileName);
+
+            // Always wrap FileWriter in BufferedWriter.
+            BufferedWriter bufferedWriter =
+                    new BufferedWriter(fileWriter);
+
+            // Note that write() does not automatically
+            // append a newline character.
+            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
+
+            // Always close files.
+            bufferedWriter.close();
+        }
+        catch(IOException ex) {
+            System.out.println(
+                    "Error writing to file '"
+                            + fileName + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
+        }
+        Runtime.getRuntime().exec("wscript " + fileName);
+//        VoiceManager voiceManager = VoiceManager.getInstance();
+//        Voice voice = voiceManager.getVoice("mike");
+//
+//        voice.allocate();
+//        try {
+//            voice.speak("hello");
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
+
+    }
+    //homework.uet@gmail.com
 
 
 

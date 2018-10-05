@@ -140,43 +140,43 @@ public class Controller_offline_mode {
 
     }
     public void read_word(ActionEvent actionEvent) throws IOException{
-//        String fileName = "read.vbs";
-//        String key = txt_Search.getText();
-//
-//        try {
-//            // Assume default encoding.
-//            FileWriter fileWriter =
-//                    new FileWriter(fileName);
-//
-//            // Always wrap FileWriter in BufferedWriter.
-//            BufferedWriter bufferedWriter =
-//                    new BufferedWriter(fileWriter);
-//
-//            // Note that write() does not automatically
-//            // append a newline character.
-//            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
-//
-//            // Always close files.
-//            bufferedWriter.close();
-//        }
-//        catch(IOException ex) {
-//            System.out.println(
-//                    "Error writing to file '"
-//                            + fileName + "'");
-//            // Or we could just do this:
-//            // ex.printStackTrace();
-//        }
-//        Runtime.getRuntime().exec("wscript " + fileName);
-        VoiceManager voiceManager = VoiceManager.getInstance();
-        Voice voice = voiceManager.getVoice("mike");
+        String fileName = "read.vbs";
+        String key = txt_Search.getText();
 
-        voice.allocate();
         try {
-            voice.speak("hello");
+            // Assume default encoding.
+            FileWriter fileWriter =
+                    new FileWriter(fileName);
+
+            // Always wrap FileWriter in BufferedWriter.
+            BufferedWriter bufferedWriter =
+                    new BufferedWriter(fileWriter);
+
+            // Note that write() does not automatically
+            // append a newline character.
+            bufferedWriter.write("CreateObject(\"SAPI.SpVoice\").Speak\""+key+"\"");
+
+            // Always close files.
+            bufferedWriter.close();
         }
-        catch (Exception e){
-            e.printStackTrace();
+        catch(IOException ex) {
+            System.out.println(
+                    "Error writing to file '"
+                            + fileName + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
         }
+        Runtime.getRuntime().exec("wscript " + fileName);
+//        VoiceManager voiceManager = VoiceManager.getInstance();
+//        Voice voice = voiceManager.getVoice("mike");
+//
+//        voice.allocate();
+//        try {
+//            voice.speak("hello");
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
 
     }
     //homework.uet@gmail.com
