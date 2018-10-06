@@ -1,1 +1,1 @@
-CreateObject("SAPI.SpVoice").Speak"tôi là học sinh"
+CreateObject("SAPI.SpVoice").Speak"hello"

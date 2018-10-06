@@ -15,7 +15,7 @@ import javafx.scene.web.*;
 
 public class Controller_online_mode {
 
-    public TextField txt_Search;
+    public TextArea txt_Search;
     public WebView ww_Detail;
     public Button btn_Search;
     public String translate(String langFrom, String langTo, String text) throws IOException {
