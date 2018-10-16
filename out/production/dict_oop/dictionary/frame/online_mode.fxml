@@ -15,9 +15,9 @@
 
 <BorderPane prefHeight="463.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller_online_mode">
    <center>
-      <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
+      <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="463.0" prefWidth="498.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
          <children>
-            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="237.0" minHeight="-1.0" minWidth="-1.0" prefHeight="212.0" prefWidth="346.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="237.0" />
+            <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="164.0" minHeight="-1.0" minWidth="-1.0" prefHeight="285.0" prefWidth="346.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="164.0" />
             <GridPane layoutX="342.0" layoutY="58.0" prefHeight="385.0" prefWidth="64.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="58.0">
                <children>
                   <Button fx:id="speaker" layoutX="342.0" layoutY="387.0" mnemonicParsing="false" onAction="#read_word" prefHeight="60.0" prefWidth="64.0" style="-fx-background-image: url('@logo.png');" GridPane.rowIndex="3">
@@ -29,7 +29,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="btn_Search" mnemonicParsing="false" onAction="#search" text="Tra cứu" />
+                  <Button fx:id="btn_Search" mnemonicParsing="false" onAction="#search" prefWidth="83.0" text="Tra cứu" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -46,7 +46,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Text>
-            <TextArea fx:id="txt_Search" layoutX="13.0" layoutY="18.0" onDragDetected="#onEnter" prefHeight="204.0" prefWidth="348.0" wrapText="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="18.0" />
+            <TextArea fx:id="txt_Search" layoutX="13.0" layoutY="18.0" onDragDetected="#onEnter" prefHeight="139.0" prefWidth="348.0" wrapText="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="18.0" />
          </children>
       </AnchorPane>
    </center>

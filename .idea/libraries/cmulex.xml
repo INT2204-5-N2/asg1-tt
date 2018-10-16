@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="mbrola ">
+  <library name="cmulex">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/mbrola.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/freetts-1.2.2-bin/freetts-1.2/lib/cmulex.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

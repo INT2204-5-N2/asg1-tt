@@ -1,7 +1,8 @@
 package dictionary;
 
-import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory;
 import com.sun.speech.freetts.VoiceManager;
+import com.sun.speech.freetts.Voice;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -13,7 +14,13 @@ import javafx.stage.*;
 import java.io.*;
 import java.io.IOException;
 import java.sql.*;
+import java.util.Locale;
+
 import com.sun.speech.*;
+import javax.speech.Central;
+import javax.speech.EngineException;
+import javax.speech.synthesis.*;
+
 
 public class Controller_offline_mode {
 
@@ -144,6 +151,38 @@ public class Controller_offline_mode {
         }
 
     }
+
+    public void read(ActionEvent actionEvent) throws Exception{
+
+        try {
+            System.setProperty("logLevel", "OFF"); // INFO or WARN are also valid
+            System.setProperty("FreeTTSSynthEngineCentral", "com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
+            System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+
+            Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
+            Synthesizer synthesizer =
+                    Central.createSynthesizer(new SynthesizerModeDesc(Locale.US));
+            synthesizer.allocate();
+
+            synthesizer.resume();
+
+            synthesizer.speakPlainText("Hello",null);
+            synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
+            synthesizer.deallocate();
+
+//            Voice[] voices = voiceManager.getVoices();
+//            for (int i = 0; i < voices.length; i++) {
+//                System.out.println("    " + voices[i].getName() + " (" + voices[i].getDomain() + " domain)");
+//            }
+//
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
+
     public void read_word(ActionEvent actionEvent) throws IOException{
         String fileName = "read.vbs";
         String key = txt_Search.getText();
