@@ -33,6 +33,11 @@ public class Controller_offline_mode {
     public Label lbl_Detail;
     public Button btn_Speaker;
 
+
+    public void onEnter(ActionEvent ae) throws SQLException{
+        this.search(ae);
+    }
+
     public  void  search(ActionEvent actionEvent) throws SQLException{
 
         Connection connection_class = new Connection();

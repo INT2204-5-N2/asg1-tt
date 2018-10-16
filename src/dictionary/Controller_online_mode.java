@@ -9,6 +9,8 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.sql.SQLException;
+
 import javafx.event.*;
 import javafx.scene.control.*;
 import javafx.scene.web.*;
@@ -49,6 +51,9 @@ public class Controller_online_mode {
             e.printStackTrace();
         }
 
+    }
+    public void onEnter(ActionEvent ae) throws Exception {
+        this.search(ae);
     }
     public void read_word(ActionEvent actionEvent) throws IOException{
         String fileName = "read.vbs";

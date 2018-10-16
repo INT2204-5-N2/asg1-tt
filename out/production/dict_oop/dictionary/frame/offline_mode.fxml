@@ -17,7 +17,7 @@
    <center>
       <AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="471.0" prefWidth="506.0" style="-fx-background-color: #66ccff;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
+            <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" onAction="#onEnter" prefHeight="26.0" prefWidth="230.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0" />
             <WebView fx:id="ww_Detail" layoutX="14.0" layoutY="58.0" minHeight="-1.0" minWidth="-1.0" prefHeight="385.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="58.0" />
             <Button fx:id="btn_Search" layoutX="268.0" layoutY="15.0" mnemonicParsing="false" onAction="#search" text="Tra cứu" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
             <GridPane layoutX="342.0" layoutY="58.0" prefHeight="385.0" prefWidth="64.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="58.0">
