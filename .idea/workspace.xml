@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix mạnh giao diện">
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/freetts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsapi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mbrola_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dict_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dict_oop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_offline_mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/Controller_offline_mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/offline_mode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/offline_mode.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/online_mode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dict_oop/dictionary/frame/online_mode.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/read.vbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary/Controller_offline_mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/Controller_offline_mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary/frame/offline_mode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/frame/offline_mode.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary/frame/online_mode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/frame/online_mode.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix mạnh giao diện" />
     <list id="64e03df9-08fa-42c8-9ef0-f232ad063492" name="fix" comment="fix" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -216,7 +201,7 @@
     <session id="1559652141">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.45" value="2" />
@@ -263,8 +248,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_offline_mode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+            <state relative-caret-position="201">
+              <caret line="175" column="15" lean-forward="true" selection-start-line="175" selection-end-line="175" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -404,7 +389,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/tuan/Desktop/Workspace/OOP/dict_oop/src/dictionary/Controller.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539713027974" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539713113876" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../linh tinh/Tank90" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -581,7 +566,7 @@
       <workItem from="1539698529566" duration="789000" />
       <workItem from="1539703783888" duration="4788000" />
       <workItem from="1539709263287" duration="1858000" />
-      <workItem from="1539711363759" duration="1653000" />
+      <workItem from="1539711363759" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="fix nhẹ giao diện và chức năng thêm từ mới">
       <created>1537977823705</created>
@@ -678,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60908000" />
+    <option name="totallyTimeSpent" value="61048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -705,9 +690,9 @@
       <window_info anchor="bottom" id="Event Log" order="11" weight="0.32884097" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32763976" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32763976" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.32763976" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="16" visible="true" weight="0.2468944" />
+      <window_info anchor="bottom" id="Run" order="16" weight="0.2468944" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -881,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionary/Controller_offline_mode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="201">
+          <caret line="175" column="15" lean-forward="true" selection-start-line="175" selection-end-line="175" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

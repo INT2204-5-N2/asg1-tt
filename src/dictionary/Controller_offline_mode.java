@@ -160,15 +160,21 @@ public class Controller_offline_mode {
             System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 
             Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
-            Synthesizer synthesizer =
-                    Central.createSynthesizer(new SynthesizerModeDesc(Locale.US));
-            synthesizer.allocate();
+       	    VoiceManager voiceManager = VoiceManager.getInstance();
+	    Voice voice = voiceManager.getVoice("kevin16");
+	
+            voice.allocate();
+            voice.speak(txt_Search.getText());
 
-            synthesizer.resume();
+//     Synthesizer synthesizer =
+         //           Central.createSynthesizer(new SynthesizerModeDesc(Locale.US));
+           // synthesizer.allocate();
 
-            synthesizer.speakPlainText("Hello",null);
-            synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
-            synthesizer.deallocate();
+           // synthesizer.resume();
+
+            //synthesizer.speakPlainText("Hello",null);
+            //synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
+            //synthesizer.deallocate();
 
 //            Voice[] voices = voiceManager.getVoices();
 //            for (int i = 0; i < voices.length; i++) {
